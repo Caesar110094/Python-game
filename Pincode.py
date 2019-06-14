@@ -23,20 +23,26 @@ while quesses < 5:
         break
     elif number_two == easter:
         print ("Yeah!")
-
-
     
-
 number = str(number)
 number_two = str(number_two)
 if number == number_two:
   print("correct")
-else:
+else:  
   if number[0] == number_two[0]: 
-    print("You got a digit correct") 
+    print("G") 
   if number[1] == number_two[1]: 
-    print("You got a digit correct") 
+    print("G") 
   if number[2] == number_two[2]: 
-    print("You a digit correct") 
+    print("G")
   if number[3] == number_two[3]: 
-    print("You got a digit correct") 
+    print("G")  
+
+  if number[0] != number_two[0]: 
+    print("F") 
+  if number[1] != number_two[1]: 
+    print("F") 
+  if number[2] != number_two[2]: 
+    print("F") 
+  if number[3] != number_two[3]: 
+    print("F")  
