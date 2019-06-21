@@ -4,40 +4,26 @@ number = (random.choice (pincode))
 print(number)
 
 
-number_two = (input("Guess the random 4 digit number: "))
-
 quesses = 0
 while quesses < 10:
-    quesses +=1    
-    print ("This is your guess: %s" %(number_two))
-    if number_two == number:
-        quesses = str(quesses)
-        print ("You guess it in : ", quesses + " guesses")
-    break
+  number_two = input("Guess the random 4 digit number: ")
 
-number = str(number)
-number_two = str(number_two)
-if number == number_two:
-  print("You guessed it!")
-else:
-  if number[0] == number_two[0]: 
-    print("G")  
-  if number[1] == number_two[1]: 
-    print("G") 
-  if number[2] == number_two[2]: 
-    print("G")
-  if number[3] == number_two[3]: 
-    print("G")
+  quesses += 1    
+  print ("This is your guess: %s" %(number_two))
+  if number_two == number:
+    quesses = str(quesses)
+    print ("You guess it in : ", quesses + " guesses")  
+
+  number = str(number)
+  number_two = str(number_two)
   
-  if number[0] != number_two[0]: 
+  for index in range(10):
+  if number[index] == number_two[index]: 
+    print("G")  
+    
+  if number[index] != number_two[index]: 
     print("F") 
-  if number[1] != number_two[1]: 
-    print("F") 
-  if number[2] != number_two[2]: 
-    print("F") 
-  if number[3] != number_two[3]: 
-    print("F") 
-  if number != number_two:
+
     print ("Wrong Code")
     
 
