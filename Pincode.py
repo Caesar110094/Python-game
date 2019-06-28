@@ -12,7 +12,7 @@ while quesses < 10:
   print ("You have used " + str(quesses) + " out of 10 guesses")
   if userinput == number:
     quesses2 = str(quesses)
-    print ("You guess it in:", quesses2 + " guesses")  
+    print ("You guessed it in:", quesses2 + " guesses")  
 
   number = str(number)
   userinput = str(userinput)
@@ -51,23 +51,19 @@ while quesses < 10:
   e1 = "1980"
   e2 = "1955"
 
-  if number_two != number and number_two == e1:
+  if userinput != number and userinput == e1:
 
-     if number_two == e1:
+     if userinput == e1:
         print ("Yeah! You found an easteregg: The birthyear of LGG!")
      quesses = quesses - 1
-  else:
-     print(*check, sep=" ")
-     print ("Wrong code")
+    
+  elif userinput != number and userinput == e2:
 
-
-  if number_two != number and number_two == e2:
-
-     if number_two == e2:
+     if userinput == e2:
         print ("Yeah! You found an easteregg: The birthyear of BNT!")
      quesses = quesses - 1
+
   else:
      print(*check, sep=" ")
      print ("Wrong code")
-     
 
