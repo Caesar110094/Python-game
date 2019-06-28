@@ -47,6 +47,7 @@ while quesses < 10:
    check[i] = 'C'
 
   e1 = "1980"
+  e2 = "1955"
 
   if number_two != number and number_two == e1:
 
@@ -56,4 +57,15 @@ while quesses < 10:
   else:
      print(*check, sep=" ")
      print ("Wrong code")
+
+
+  if number_two != number and number_two == e2:
+
+     if number_two == e2:
+        print ("Yeah! You found an easteregg: The birthyear of BNT!")
+     quesses = quesses - 1
+  else:
+     print(*check, sep=" ")
+     print ("Wrong code")
+     
 
