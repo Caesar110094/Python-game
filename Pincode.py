@@ -30,7 +30,7 @@ while quesses < 10:
 
 
   check = ["F"] * 4
-  if userinput == number and quesses > 1:
+  if userinput == number and quesses >= 1:
     print("The game was beaten in " + str(quesses) +" quesses. Congratulations!")
     break
   else:
